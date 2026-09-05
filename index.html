@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Priyanka 💜</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BIRTHDAY COUNTDOWN
+    ====================================================== -->
+
+    <section id="countdownScreen" class="countdown-screen">
+
+        <div class="countdown-card">
+
+            <div class="countdown-cake">🎂</div>
+
+            <span class="countdown-small">
+                SOMETHING SPECIAL IS COMING
+            </span>
+
+            <h1>
+                Priyanka's<br>
+                Birthday <br> 💜
+            </h1>
+
+            <p class="countdown-message">
+                A little surprise is waiting for you...
+            </p>
+
+            <div class="countdown-box">
+
+                <div class="time-item">
+                    <strong id="hours">00</strong>
+                    <span>HOURS</span>
+                </div>
+
+                <div class="time-colon">:</div>
+
+                <div class="time-item">
+                    <strong id="minutes">00</strong>
+                    <span>MINUTES</span>
+                </div>
+
+                <div class="time-colon">:</div>
+
+                <div class="time-item">
+                    <strong id="seconds">00</strong>
+                    <span>SECONDS</span>
+                </div>
+
+            </div>
+
+            <p class="countdown-date">
+                💜 6 September
+            </p>
+
+            <div id="countdownFinished" class="countdown-finished">
+                Your surprise is ready! 💜
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PASSWORD SCREEN
+    ====================================================== -->
+
+    <section id="passwordScreen" class="password-screen hidden">
+
+        <div class="password-card">
+
+            <div class="lock-icon">🔐</div>
+
+            <span class="private-title">
+                PRIVATE SURPRISE
+            </span>
+
+            <h1>
+                Priyanka <br>💜
+            </h1>
+
+            <p>
+                A special birthday surprise
+                is waiting for you.
+            </p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your nickname"
+                autocomplete="off"
+            >
+
+            <button id="loginBtn">
+                Unlock 💜
+            </button>
+
+            <p id="passwordError" class="password-error"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main id="mainContent" class="hidden">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="corner-photo top-left">
+                <img src="./IMG5.jpg" alt="Priyanka">
+            </div>
+
+            <div class="corner-photo top-right">
+                <img src="./IMG12.jpg" alt="Priyanka">
+            </div>
+
+            <div class="corner-photo bottom-left">
+                <img src="./IMG10.jpg" alt="Priyanka">
+            </div>
+
+            <div class="corner-photo bottom-right">
+                <img src="./IMGA.jpg" alt="Priyanka">
+            </div>
+
+            <div class="hero-content">
+
+                <div class="small-title">
+                    A LITTLE SURPRISE FOR YOU
+                </div>
+
+                <div class="cake">🎂</div>
+
+                <h1>
+                    Happy Birthday!
+                </h1>
+
+                <h2>
+                    Priyanka <span>♥</span>
+                </h2>
+
+                <div class="birthday-info">
+
+                    <p class="date">
+                        🎂 6 September 2005
+                    </p>
+
+                    <p class="age">
+                        ✨ 21 Years
+                    </p>
+
+                </div>
+
+                <p class="hero-message">
+                    Today is special because
+                    someone very special was born. 💜
+                </p>
+
+                <button id="celebrateBtn">
+                    🎉 special
+                </button>
+
+                <p class="music-hint">
+                    Click Celebrate to play
+                    your birthday song 🎵
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             VIDEO MEMORY
+        ====================================================== -->
+
+        <section class="memory-section">
+
+            <div class="memory-title">
+
+                <div class="memory-heading-line">
+                    <span class="memory-line"></span>
+
+                    <p>
+                        ONE LITTLE MEMORY
+                    </p>
+
+                    <span class="memory-line"></span>
+                </div>
+
+                <h2>
+                    A Moment Worth Remembering 💜
+                </h2>
+
+                <div class="memory-heart">
+                    ♡
+                </div>
+
+            </div>
+
+
+            <div class="video-card">
+
+                <div class="memory-glow glow-one"></div>
+                <div class="memory-glow glow-two"></div>
+
+                <div class="sparkle sparkle-one">✦</div>
+                <div class="sparkle sparkle-two">✧</div>
+                <div class="sparkle sparkle-three">✦</div>
+
+                <div
+                    class="video-container"
+                    id="videoContainer"
+                >
+
+                    <video
+                        id="birthdayVideo"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    >
+
+                        <source
+                            src="./EDIT.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support this video.
+
+                    </video>
+
+
+                    <div class="video-overlay">
+
+                        <div class="video-caption">
+
+                            <span>♡</span>
+
+                            <p>
+                                A beautiful little memory
+                            </p>
+
+                        </div>
+
+
+                        <button id="videoSoundBtn">
+
+                            🔇
+                            <span>
+                                Sound Off
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="zoom-hint">
+
+                        <span>⌕</span>
+
+                        Tap to open
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="memory-footer">
+                Some moments deserve to be remembered forever ✨
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             VIDEO FULLSCREEN
+        ====================================================== -->
+
+        <div
+            class="video-zoom"
+            id="videoZoom"
+        >
+
+            <button
+                class="close-video"
+                id="closeVideo"
+            >
+                ×
+            </button>
+
+            <div class="zoom-content">
+
+                <p class="zoom-title">
+                    A Little Memory 💜
+                </p>
+
+                <video
+                    id="zoomVideo"
+                    controls
+                    playsinline
+                >
+
+                    <source
+                        src="./EDIT.mp4"
+                        type="video/mp4"
+                    >
+
+                </video>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             SIX MEMORIES
+        ====================================================== -->
+
+        <section class="memories">
+
+            <div class="heading">
+
+                <span>
+                    SIX LITTLE MEMORIES
+                </span>
+
+                <h2>
+                    One beautiful story. <br>💜
+                </h2>
+
+                <p>
+                    Click a photo to open it.
+                    Click the big photo to read the note.
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <!-- PHOTO 1 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG6.png"
+                    data-song="Saami sela pole pirandhu.mp3"
+                    data-note="Some people bring sunshine wherever they go, and somehow, you make every moment glow. 💛"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG6 - Copy.jpg"
+                            alt="Priyanka Memory 1"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            YELLOW SAREE, LOOKING DOWN
+                        </span>
+
+                        <h3>
+                            Golden Glow 💛
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 2 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG2.jpeg"
+                    data-song="oruthi maelae.mp3"
+                    data-note="Some smiles are quietly beautiful, some moments are softly unforgettable, and some souls simply stay in your heart. 💜"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG4 - Copy.jpg"
+                            alt="Priyanka Memory 2"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            SMILING PORTRAIT
+                        </span>
+
+                        <h3>
+                            That Smile 😊
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 3 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG111.jpg"
+                    data-song="Kannukkulle .mp3"
+                    data-note="In every expression, there’s a different story, in every glance, a little beauty, and in every moment, something unforgettable. ✨"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG9.jpg"
+                            alt="Priyanka Memory 3"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            PURPLE OUTFIT, SOFT LOOK
+                        </span>
+
+                        <h3>
+                            Grace in Purple 💜
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 4 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG11.jpg"
+                    data-song="Muzumathi2.mp3"
+                    data-note="Some beauty needs no words, some moments need no explanation, they simply become memories. 🤍"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG11 - Copy.jpg"
+                            alt="Priyanka Memory 4"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            SAREE
+                        </span>
+
+                        <h3>
+                            Traditional Grace 🌸
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 5 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG3.jpg"
+                    data-song="kurumugil.mp3"
+                    data-note="She found peace in the little moments, a quiet heart beneath the golden sky, and a feeling she wished could last forever. 💜✨"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG3 - Copy.jpg"
+                            alt="Priyanka Memory 5"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            BLACK DRESS, SIDE PROFILE
+                        </span>
+
+                        <h3>
+                            Lost in the Moment 🖤
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHOTO 6 -->
+
+                <div
+                    class="photo-card"
+                    data-photo="IMG22.jpg"
+                    data-song="Arabu-Naade .mp3"
+                    data-note="Her smile holds a thousand little stories, her eyes carry a quiet feeling, and this moment feels timeless. 🤍"
+                >
+
+                    <div class="image-box">
+
+                        <img
+                            src="./IMG2 - Copy.jpg"
+                            alt="Priyanka Memory 6"
+                        >
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+                    <div class="memory-text">
+
+                        <span>
+                            CLOSE-UP, NATURAL EXPRESSION
+                        </span>
+
+                        <h3>
+                            Simply Her 🤍
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PHOTO MODAL
+        ====================================================== -->
+
+        <div
+            id="photoModal"
+            class="modal"
+        >
+
+            <button
+                id="closeModal"
+                class="close"
+            >
+                ×
+            </button>
+
+
+            <div class="viewer">
+
+                <div
+                    id="flipCard"
+                    class="flip-card"
+                >
+
+                    <div class="flip-inner">
+
+                        <!-- FRONT -->
+
+                        <div class="flip-front">
+
+                            <img
+                                id="largePhoto"
+                                src=""
+                                alt="Priyanka Memory"
+                            >
+
+                            <div class="playing">
+
+                                <span>
+                                    🎵 NOW PLAYING
+                                </span>
+
+                                <p id="songTitle">
+                                    Memory Song
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BACK -->
+
+                        <div class="flip-back">
+
+                            <div class="note">
+
+                                <div class="note-icon">
+                                    💌
+                                </div>
+
+                                <span>
+                                    A LITTLE NOTE
+                                </span>
+
+                                <h2>
+                                    Priyanka
+                                </h2>
+
+                                <p id="memoryNote"></p>
+
+                                <div class="heart">
+                                    💜
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="flip-hint">
+                    Click the photo to turn it over 💜
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             LETTER
+        ====================================================== -->
+
+        <section class="note-section">
+
+            <div class="letter-card">
+
+                <div class="letter-icon">
+                    💌
+                </div>
+
+                <span>
+                    A LETTER FOR YOU
+                </span>
+
+                <h2>
+                    My Note
+                </h2>
+
+                <p>
+                    Happy Birthday to the person
+                    who makes ordinary moments
+                    feel a little more beautiful.
+                </p>
+
+                <p>
+                    I hope this new year of your life
+                    brings you endless happiness,
+                    peaceful moments, beautiful
+                    memories and everything your
+                    heart wishes for.
+                </p>
+
+                <p>
+                    You deserve all the good things
+                    life has to offer. Keep smiling,
+                    keep believing in yourself,
+                    and never forget how special
+                    you are.
+                </p>
+
+                <p>
+                    Today is your day, so enjoy every
+                    little moment and create memories
+                    that make you smile whenever
+                    you remember them.
+                </p>
+
+                <div class="final-message">
+                    Happy Birthday Priyanka 💜
+                </div>
+
+                <div class="signature">
+                    With lots of love ♥
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL
+        ====================================================== -->
+
+        <section class="final-section">
+
+            <div>
+
+                <div class="big-heart">
+                    💜
+                </div>
+
+                <h2>
+                    You are special.
+                </h2>
+
+                <p>
+                    This little surprise
+                    was made just for you.
+                </p>
+
+                <div class="final-name">
+                    Priyanka
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECRET
+        ====================================================== -->
+
+        <section class="secret">
+
+            <div class="secret-content">
+
+                <div class="lock">
+                    🔐
+                </div>
+
+                <span>
+                    ONE MORE SURPRISE
+                </span>
+
+                <h2>
+                    Something special
+                    is waiting for you.
+                </h2>
+
+                <p>
+                    Only Priyanka can open it. 💜
+                </p>
+
+                <button id="openSecret">
+                    🔐 Open My Secret
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            Made with
+            <span>♥</span>
+            especially for Priyanka.
+
+        </footer>
+
+
+        <!-- BIRTHDAY MUSIC -->
+
+        <audio
+            id="bgMusic"
+            preload="auto"
+        ></audio>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

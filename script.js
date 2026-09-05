@@ -15,7 +15,7 @@
    "2027-09-06T00:00:00"
 */
 
-const BIRTHDAY_DATE = "2026-09-06T00:00:00";
+const BIRTHDAY_DATE = "2026-09-05T00:00:00";
 
 const countdownScreen =
     document.getElementById("countdownScreen");
